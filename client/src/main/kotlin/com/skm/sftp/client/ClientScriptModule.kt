@@ -10,20 +10,24 @@ class ClientScriptModule : AbstractScriptModule() {
         SFTPBlackBox::class.java
     )
 
-    override fun multiplyImpl(arg0: Int, arg1: Int): Int {
-        return rpc.multiply(arg0, arg1)
+    override fun uploadImpl(
+        remoteHost: String,
+        username: String,
+        password: String,
+        localPath: String,
+        remotePath: String
+    ) {
+        return rpc.upload(remoteHost, username, password, localPath, remotePath)
     }
 
-    override fun addImpl(arg0: Int, arg1: Int): Int {
-        return rpc.add(arg0, arg1)
-    }
-
-    override fun subImpl(arg0: Int, arg1: Int): Int {
-        return rpc.sub(arg0, arg1)
-    }
-
-    override fun divideImpl(arg0: Int, arg1: Int): Int {
-        return rpc.divide(arg0, arg1)
+    override fun downloadImpl(
+        remoteHost: String,
+        username: String,
+        password: String,
+        localPath: String,
+        remotePath: String
+    ) {
+        return rpc.download(remoteHost, username, password, localPath, remotePath)
     }
 
 }

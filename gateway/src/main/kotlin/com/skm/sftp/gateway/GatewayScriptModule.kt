@@ -1,18 +1,27 @@
 package com.skm.sftp.gateway
 
 import com.skm.sftp.AbstractScriptModule
+import com.skm.sftp.SftpUtil
 
 class GatewayScriptModule : AbstractScriptModule() {
-    override fun multiplyImpl(arg0: Int, arg1: Int): Int {
-        return arg0 * arg1
+    override fun uploadImpl(
+        remoteHost: String,
+        username: String,
+        password: String,
+        localPath: String,
+        remotePath: String
+    ) {
+       return SftpUtil(remoteHost, username, password, localPath, remotePath).uploadSshj()
     }
-    override fun addImpl(arg0: Int, arg1: Int): Int {
-        return arg0 + arg1
+
+    override fun downloadImpl(
+        remoteHost: String,
+        username: String,
+        password: String,
+        localPath: String,
+        remotePath: String
+    ) {
+        return SftpUtil(remoteHost, username, password, localPath, remotePath).downloadSshj()
     }
-    override fun subImpl(arg0: Int, arg1: Int): Int {
-        return arg0 - arg1
-    }
-    override fun divideImpl(arg0: Int, arg1: Int): Int {
-        return arg0 / arg1
-    }
+
 }

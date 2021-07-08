@@ -23,40 +23,30 @@ abstract class AbstractScriptModule: SFTPBlackBox {
         }
     }
 
+
     @ScriptFunction(docBundlePrefix = "ScriptModule")
-    override fun multiply(
-        @ScriptArg("arg0") arg0: Int,
-        @ScriptArg("arg1") arg1: Int
-    ): Int {
-        return multiplyImpl(arg0, arg1)
+    override fun upload(
+        @ScriptArg("remoteHost") remoteHost: String,
+        @ScriptArg("username") username: String,
+        @ScriptArg("password") password: String,
+        @ScriptArg("localPath") localPath: String,
+        @ScriptArg("remotePath") remotePath: String
+    ) {
+        return uploadImpl(remoteHost, username, password, localPath, remotePath)
     }
 
-    protected abstract fun multiplyImpl(arg0: Int, arg1: Int): Int
     @ScriptFunction(docBundlePrefix = "ScriptModule")
-    override fun add(
-        @ScriptArg("arg0") arg0: Int,
-        @ScriptArg("arg1") arg1: Int
-    ): Int {
-        return addImpl(arg0, arg1)
+    override fun download(
+        @ScriptArg("remoteHost") remoteHost: String,
+        @ScriptArg("username") username: String,
+        @ScriptArg("password") password: String,
+        @ScriptArg("localPath") localPath: String,
+        @ScriptArg("remotePath") remotePath: String
+    ) {
+        return downloadImpl(remoteHost, username, password, localPath, remotePath)
     }
 
-    protected abstract fun addImpl(arg0: Int, arg1: Int): Int
-    @ScriptFunction(docBundlePrefix = "ScriptModule")
-    override fun sub(
-        @ScriptArg("arg0") arg0: Int,
-        @ScriptArg("arg1") arg1: Int
-    ): Int {
-        return subImpl(arg0, arg1)
-    }
 
-    protected abstract fun subImpl(arg0: Int, arg1: Int): Int
-    @ScriptFunction(docBundlePrefix = "ScriptModule")
-    override fun divide(
-        @ScriptArg("arg0") arg0: Int,
-        @ScriptArg("arg1") arg1: Int
-    ): Int {
-        return divideImpl(arg0, arg1)
-    }
-
-    protected abstract fun divideImpl(arg0: Int, arg1: Int): Int
+    protected abstract fun uploadImpl(remoteHost: String, username: String, password: String, localPath: String, remotePath: String)
+    protected abstract fun downloadImpl(remoteHost: String, username: String, password: String, localPath: String, remotePath: String)
 }
