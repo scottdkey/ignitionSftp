@@ -1,4 +1,16 @@
-rootProject.name = "apachepoi"
+rootProject.name = "sftp"
+
+pluginManagement{
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven (url = "http://maven.teamdev.com/repository/products")
+        maven (url ="https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" )
+        maven (url ="https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" )
+        maven (url = "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" )
+    }
+}
 
 include(
     ":",

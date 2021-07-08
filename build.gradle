@@ -1,84 +1,46 @@
-buildscript {
-  repositories{
-    gradlePluginPortal()
-    mavenLocal()
-    mavenCentral()
-    jcenter()
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
-  }
-  ext.sdk_version = "8.1.0-SNAPSHOT"
-
-  dependencies {
-    classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
-  }
-}
-
 plugins {
-  id "base"
+  kotlin("jvm") version "1.4.10"
+  id("io.ia.sdk.modl") version "0.1.0-SNAPSHOT-12"
+
+
 }
-
-version "1.0.1"
-group "com.skm"
-
-allprojects {
-  apply plugin: "ignition-module-plugin"
-
-  ignitionModule {
-    fileName "skmReporting"
-    moduleRoot "apachepoi"
-    moduleName "skmReporting_V${project.version}"
-    moduleId "com.skm.apachepoi"
-    moduleVersion "${project.version}"
-    moduleDescription "A Module to add SKM specific Excel Scripts to Ignition" +
-        " 8.1.0 and newer"
-    requiredFrameworkVersion "8"
-    requiredIgnitionVersion "8.1.0"
-    isFree true
-    license "license.html"
-    moduleDependencies = [
-        [scope: "C", moduleId: "com.inductiveautomation.perspective"],
-        [scope: "G", moduleId: "com.inductiveautomation.perspective"],
-        [scope: "D", moduleId: "com.inductiveautomation.perspective"]
-        ]
-    projectScopes = [
-        [name: "common", scope: "CGD"],
-        [name: "client", scope: "CD"],
-        [name: "gateway", scope: "G"],
-        [name: "designer", scope: "D"],
+//
+//dependencies {
+//  implementation("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
+//}
+version  = "1.0.0"
+group = "com.skm"
+extra["sdkVersion"] = "8.1.0-SNAPSHOT"
 
 
 
-    ]
-    hooks = [
-        [scope: "C", hookClass: "com.skm.apachepoi.client.ClientHook"],
-        [scope: "G", hookClass: "com.skm.apachepoi.gateway.GatewayHook"],
-        [scope: "D", hookClass: "com.skm.apachepoi.designer.DesignerHook"]
-    ]
+ignitionModule {
+    name.set("skmSFTP_${project.version}")
+    fileName.set("skmSFTP")
+
+    moduleName "skmSFTP_${project.version}"
+    id.set( "com.skm.sftp")
+    moduleVersion.set("$project.version}")
+    moduleDescription.set("adding SFTP script functionality to ignition")
+    requiredIgnitionVersion.set("8.1.0")
+    isFree.set(true)
+    license.set("license.html")
+    moduleDependencies.set(mapOf(
+        "com.inductiveautomation.perspective" to "C",
+        "com.inductiveautomation.perspective" to "D",
+        "com.inductiveautomation.perspective" to "G",
+    ))
+    hooks.set(mapOf("com.skm.sftp.client.ClientHook" to "C",
+      "com.skm.sftp.gateway.GatewayHook" to "G",
+      "com.skm.sftp.designer.DesignerHook" to "D"
+    ))
   }
-  if(project.plugins.hasPlugin("java")){
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-  }
-
-  repositories {
-    mavenLocal()
-    mavenCentral()
-    google()
-    jcenter()
-    maven {
-      name "teamdev"
-      url "http://maven.teamdev.com/repository/products"
-
+  tasks.getByName("signModule").enabled = true
+allprojects{ tasks { withType<KotlinCompile> { kotlinOptions {
+          jvmTarget = "11"
+        }
+      }
     }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
   }
-  wrapper {
-    distributionUrl = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip"
-  }
-}
 
 
