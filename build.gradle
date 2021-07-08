@@ -1,0 +1,84 @@
+buildscript {
+  repositories{
+    gradlePluginPortal()
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
+  }
+  ext.sdk_version = "8.1.0-SNAPSHOT"
+
+  dependencies {
+    classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
+  }
+}
+
+plugins {
+  id "base"
+}
+
+version "1.0.1"
+group "com.skm"
+
+allprojects {
+  apply plugin: "ignition-module-plugin"
+
+  ignitionModule {
+    fileName "skmReporting"
+    moduleRoot "apachepoi"
+    moduleName "skmReporting_V${project.version}"
+    moduleId "com.skm.apachepoi"
+    moduleVersion "${project.version}"
+    moduleDescription "A Module to add SKM specific Excel Scripts to Ignition" +
+        " 8.1.0 and newer"
+    requiredFrameworkVersion "8"
+    requiredIgnitionVersion "8.1.0"
+    isFree true
+    license "license.html"
+    moduleDependencies = [
+        [scope: "C", moduleId: "com.inductiveautomation.perspective"],
+        [scope: "G", moduleId: "com.inductiveautomation.perspective"],
+        [scope: "D", moduleId: "com.inductiveautomation.perspective"]
+        ]
+    projectScopes = [
+        [name: "common", scope: "CGD"],
+        [name: "client", scope: "CD"],
+        [name: "gateway", scope: "G"],
+        [name: "designer", scope: "D"],
+
+
+
+    ]
+    hooks = [
+        [scope: "C", hookClass: "com.skm.apachepoi.client.ClientHook"],
+        [scope: "G", hookClass: "com.skm.apachepoi.gateway.GatewayHook"],
+        [scope: "D", hookClass: "com.skm.apachepoi.designer.DesignerHook"]
+    ]
+  }
+  if(project.plugins.hasPlugin("java")){
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+  }
+
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    google()
+    jcenter()
+    maven {
+      name "teamdev"
+      url "http://maven.teamdev.com/repository/products"
+
+    }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
+  }
+  wrapper {
+    distributionUrl = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip"
+  }
+}
+
+

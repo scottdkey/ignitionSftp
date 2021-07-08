@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../client/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../client/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="apachePoi.client.main" />
+    <orderEntry type="module" module-name="apachePoi.common.main" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:client-api:8.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:designer:8.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.vision:vision-designer:11.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.vision:vision-client:11.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.reporting:reporting-common:6.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:active-query-builder:8.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:common:8.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:client-bootstrap:8.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: com.jgoodies:forms:1.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.miglayout:miglayout-swing:4.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-components:3.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-grids:3.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.plaf:ignition-laf:3.0.0-beta3" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-plaf-9:0.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:synthetica:3.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:synthetica-addons:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:jydocking:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:jyiconfonts:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:jytable:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.javasoft:jywidgets:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jdesktop:swingx:0.0.1-ia" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.3.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-swing:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-anim:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-awt-util:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-bridge:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-constants:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-css:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-dom:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-ext:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-gvt:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-i18n:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-parser:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-script:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-svg-dom:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-svggen:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-transcoder:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-util:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:xmlgraphics-commons:2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlgraphics:batik-xml:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: xalan:xalan:2.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: xalan:serializer:2.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.3.04" level="project" />
+    <orderEntry type="library" name="Gradle: xml-apis:xml-apis-ext:1.3.04" level="project" />
+    <orderEntry type="library" name="Gradle: com.twelvemonkeys.imageio:imageio-batik:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.teamdev.jxbrowser:jxbrowser-win64:7.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.teamdev.jxbrowser:jxbrowser-linux64:7.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.teamdev.jxbrowser:jxbrowser-mac:7.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.teamdev.jxbrowser:jxbrowser:7.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.teamdev.jxbrowser:jxbrowser-swing:7.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-action:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-dialogs:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-diff:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-dock:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-editor:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-shortcut:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.fifesoft:languagesupport:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fifesoft:rstaui:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fifesoft:autocomplete:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fifesoft:spellchecker:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.vision:vision-common:11.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml-schemas:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.1.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.fifesoft:rsyntaxtextarea:3.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:23.3-jre" level="project" />
+    <orderEntry type="library" name="Gradle: com.inductiveautomation.ignition:ia-gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.jidesoft:jide-common:3.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.solvoj.zxing-java6:core-java6:3.2.1.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.13" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: edu.princeton.cup:java-cup:10k" level="project" />
+    <orderEntry type="library" name="Gradle: it.sauronsoftware:cron4j:2.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.10.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-collections4:4.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.19" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-math3:3.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.jfree:jfreechart-min:1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jgrapht:jgrapht-core:1.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.python:jython:2.7.1-ia5" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: io.dropwizard.metrics:metrics-core:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.barcode4j:barcode4j:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Gradle: org.bitbucket.b_c:jose4j:0.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9" level="project" />
+    <orderEntry type="library" name="Gradle: net.java.dev.timingframework:timingframework:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.miglayout:miglayout-core:4.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.twelvemonkeys.imageio:imageio-core:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.twelvemonkeys.common:common-image:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.twelvemonkeys.common:common-io:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.twelvemonkeys.common:common-lang:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mozilla:rhino:1.7.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlbeans:xmlbeans:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.virtuald:curvesapi:1.06" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.1.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.jheaps:jheaps:0.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="apachePoi.client.main" />
+</module>

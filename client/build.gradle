@@ -1,0 +1,13 @@
+plugins {
+  id "java"
+}
+
+
+dependencies {
+  compile(project(":common"))
+  implementation("com.inductiveautomation.ignitionsdk:reporting-common:${sdk_version}")
+  compile("com.inductiveautomation.ignitionsdk:client-api:${sdk_version}")
+  compile("com.inductiveautomation.ignitionsdk:designer-api:${sdk_version}")
+  compile("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
+  compile("com.inductiveautomation.ignitionsdk:vision-client-api:${sdk_version}")
+}

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d268da0f-fd97-47b7-a9ba-205fab7cdd80" name="Default Changelist" comment="Stable in 8.1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/apachePoi.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/apachePoi.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/client/apachePoi.client.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/client/apachePoi.client.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/common/apachePoi.common.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/common/apachePoi.common.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/designer/apachePoi.designer.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/designer/apachePoi.designer.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/gateway/apachePoi.gateway.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/gateway/apachePoi.gateway.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctionsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/HelperFunctionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/skm/apachepoi/client/ClientHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/skm/apachepoi/client/ClientHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/skm/apachepoi/client/ClientScriptModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/skm/apachepoi/client/ClientScriptModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/AbstractScriptModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/AbstractScriptModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/HelperFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/HelperFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CKSD_DailyUV.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CKSD_DailyUV.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CKSD_UVMonthly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CKSD_UVMonthly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CreeksideWTP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/CreeksideWTP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/GW DBPR No PM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/GW DBPR No PM.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/GW DBPR.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/GW DBPR.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/JSSD_Monthly.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/JSSD_Monthly.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/OgdenReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/OgdenReport.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Park Meadows Well.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Park Meadows Well.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Monthly Report MN02.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Monthly Report MN02.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Monthly Report.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Monthly Report.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Sewer Flows.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Quinns Sewer Flows.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/ScriptModule.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/AbstractScriptModule.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Single Rack.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/Single Rack.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/UV Off-SpecWaterLog.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/UV Off-SpecWaterLog.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/XLTest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/com.skm.apachepoi/XLTest.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayScriptModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayScriptModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/CKSD_DailyUV.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/CKSD_UVMonthly.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/CreeksideWTP.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/GW DBPR No PM.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/GW DBPR.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/JSSD_Monthly.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/OgdenReport.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/Park Meadows Well.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/Quinns Monthly Report MN02.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/Quinns Monthly Report.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/Quinns Sewer Flows.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/Single Rack.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/UV Off-SpecWaterLog.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/com.skm.apachepoi.gateway/XLTest.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/common">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="apachepoi" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/gateway/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/HelperFunctionsTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctions.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctionsTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/skm/apachepoi/ExcelFunctionsBlackBox.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayScriptModule.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gateway/src/main/java/com/skm/apachepoi/gateway/GatewayHook.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gradle.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/settings.gradle" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1pGJegcALlUVUdUE6CWxEGswQeD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\SKM-Reporting-Module\client" />
+      <recent name="D:\code\SKM-Reporting-Module\gateway\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\SKM-Reporting-Module\gateway\src\main\resources\com.skm.apachepoi.gateway" />
+      <recent name="D:\code\SKM-Reporting-Module\common\src\main\resources" />
+      <recent name="D:\code\SKM-Reporting-Module\gateway\src\main" />
+      <recent name="D:\code\SKM-Reporting-Module\common\src\main" />
+      <recent name="D:\code\SKM-Reporting-Module\gateway\src\main\resources\com\skm\apachepoi" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.skm.apachepoi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.skm.apachepoi" />
+      <recent name="com.skm.apachepoi.gateway" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.skm.apachepoi.gateway" />
+      <recent name="com.skm.apachepoi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.SKM-Reporting-Module [jar]">
+    <configuration name="SKM-Reporting-Module [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SKM-Reporting-Module [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SKM-Reporting-Module" type="GradleRunConfiguration" factoryName="Gradle" singleton="false" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SKM-Reporting-Module:client [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SKM-Reporting-Module:client [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SKM-Reporting-Module:client [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.SKM-Reporting-Module [jar]" />
+        <item itemvalue="Gradle.SKM-Reporting-Module:client [jar]" />
+        <item itemvalue="Gradle.SKM-Reporting-Module:client [buildNeeded]" />
+        <item itemvalue="Gradle.SKM-Reporting-Module:client [assemble]" />
+        <item itemvalue="Gradle.SKM-Reporting-Module [test]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d268da0f-fd97-47b7-a9ba-205fab7cdd80" name="Default Changelist" comment="" />
+      <created>1614803592109</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614803592109</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added gradle">
+      <created>1615844270445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615844270445</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cleanup">
+      <created>1616519297110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616519297110</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Code compiling without error.">
+      <created>1616609079735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616609079735</updated>
+    </task>
+    <task id="LOCAL-00004" summary="cleanup -- module loaded into Ignition 8.1.0">
+      <created>1616686195484</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616686195484</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cleanup -- module loaded into Ignition 8.1.0">
+      <created>1616694338531</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616694338531</updated>
+    </task>
+    <task id="LOCAL-00006" summary="end of day cleanup">
+      <created>1616713978320</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616713978320</updated>
+    </task>
+    <task id="LOCAL-00007" summary="end of day cleanup">
+      <created>1616713990472</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616713990472</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Stable in 8.1.0">
+      <created>1617819626307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617819626307</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added gradle" />
+    <MESSAGE value="cleanup" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Code compiling without error." />
+    <MESSAGE value="cleanup -- module loaded into Ignition 8.1.0" />
+    <MESSAGE value="Things class load error on initializeScriptManager." />
+    <MESSAGE value="end of day cleanup" />
+    <MESSAGE value="Stable in 8.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable in 8.1.0" />
+  </component>
+</project>

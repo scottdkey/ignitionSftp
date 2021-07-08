@@ -1,0 +1,9 @@
+rootProject.name = "apachepoi"
+
+include(
+    ":",
+    ":client",
+    ":common",
+    ":designer",
+    ":gateway"
+)
