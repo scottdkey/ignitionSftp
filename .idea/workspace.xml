@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d268da0f-fd97-47b7-a9ba-205fab7cdd80" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/client/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/skm/sftp/SftpUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/com/skm/sftp/client/ClientScriptModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/com/skm/sftp/client/ClientScriptModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/skm/sftp/AbstractScriptModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/skm/sftp/AbstractScriptModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/skm/sftp/SFTPBlackBox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/skm/sftp/SFTPBlackBox.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/sftp/AbstractScriptModule.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/sftp/AbstractScriptModule.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/designer/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/kotlin/com/skm/sftp/gateway/GatewayScriptModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/com/skm/sftp/gateway/GatewayScriptModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="d268da0f-fd97-47b7-a9ba-205fab7cdd80" name="Default Changelist" comment="added sftp to system and checked build -- testing tomorrow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -457,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625758552141</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added sftp to system and checked build -- testing tomorrow">
+      <created>1625787647271</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625787647271</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,6 +472,7 @@
     <MESSAGE value="end of day cleanup" />
     <MESSAGE value="Stable in 8.1.0" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="added sftp to system and checked build -- testing tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sftp to system and checked build -- testing tomorrow" />
   </component>
 </project>
