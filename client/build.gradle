@@ -1,22 +1,14 @@
 plugins {
-    kotlin("jvm")
-    id("java-library")
-
+    id "java"
+    id "org.jetbrains.kotlin.jvm" version '1.4.31'
 }
 
 
 dependencies {
-    val sdkVersion: String by project.parent!!.extra
     implementation(project(":common"))
-    implementation(
-        "com.inductiveautomation.ignitionsdk",
-        "reporting-common",
-        sdkVersion
-    )
-    implementation("com.inductiveautomation.ignitionsdk:client-api:${sdkVersion}")
-    implementation("com.inductiveautomation.ignitionsdk:designer-api:${sdkVersion}")
-    implementation("com.inductiveautomation" +
-            ".ignitionsdk:vision-designer-api:${sdkVersion}")
-    implementation("com.inductiveautomation" +
-            ".ignitionsdk:vision-client-api:${sdkVersion}")
+    implementation("com.inductiveautomation.ignitionsdk:reporting-common:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:client-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:designer-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:vision-client-api:${sdk_version}")
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>sftp</name>
-	<comment>Project skmSFTP created by Buildship.</comment>
+	<name>common</name>
+	<comment>Project common created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1625766221192</id>
+			<id>1625766221172</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

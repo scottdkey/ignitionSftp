@@ -1,12 +1,14 @@
-package com.skm.sftp.client
+package com.skm.sftp.designer
 
+import com.inductiveautomation.ignition.designer.model.AbstractDesignerModuleHook
 import com.inductiveautomation.ignition.common.script.ScriptManager
-import com.inductiveautomation.ignition.common.script.hints.PropertiesFileDocProvider
-import com.inductiveautomation.vision.api.client.AbstractClientModuleHook
 import com.skm.sftp.AbstractScriptModule.Companion.modulePath
+import com.skm.sftp.client.ClientScriptModule
+import com.inductiveautomation.ignition.common.script.hints.PropertiesFileDocProvider
+
 
 @Suppress("unused")
-class ClientHook : AbstractClientModuleHook() {
+class DesignerHook : AbstractDesignerModuleHook() {
     override fun initializeScriptManager(manager: ScriptManager) {
         super.initializeScriptManager(manager)
         manager.addScriptModule(
