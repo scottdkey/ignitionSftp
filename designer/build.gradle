@@ -1,0 +1,14 @@
+plugins {
+  id "java"
+}
+
+dependencies {
+  compile(project(":common"))
+  compile(project(":client"))
+  implementation("com.inductiveautomation.ignitionsdk:client-api:${sdk_version}")
+  implementation("com.inductiveautomation.ignitionsdk:designer-api:${sdk_version}")
+  implementation("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
+  compileOnly("com.inductiveautomation.ignitionsdk:perspective-common:${sdk_version}")
+  compileOnly("com.inductiveautomation.ignitionsdk:perspective-designer:${sdk_version}")
+  compileOnly("com.inductiveautomation.ignitionsdk:ignition-common:${sdk_version}")
+}

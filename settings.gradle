@@ -1,6 +1,5 @@
-rootProject.name = "sftp"
+rootProject.name = "skmSFTP"
 include(
-    ":",
     ":client",
     ":common",
     ":designer",
