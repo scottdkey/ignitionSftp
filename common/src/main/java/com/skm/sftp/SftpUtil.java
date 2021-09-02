@@ -3,8 +3,8 @@ package com.skm.sftp;
 import net.schmizz.sshj.SSHClient;
 import net.schmizz.sshj.sftp.SFTPClient;
 import net.schmizz.sshj.transport.verification.PromiscuousVerifier;
-
 import java.io.IOException;
+
 
 public class SftpUtil {
 
@@ -29,6 +29,4 @@ public class SftpUtil {
     sftpClient.close();
     client.disconnect();
   }
-
-
 }
