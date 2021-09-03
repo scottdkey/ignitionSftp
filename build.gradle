@@ -24,9 +24,9 @@ allprojects {
   apply plugin: "ignition-module-plugin"
 
   ignitionModule {
-    fileName "sftp"
+    fileName "skmSFTP"
     moduleRoot "skmSFTP"
-    moduleName "skmSFTP_${project.version}"
+    moduleName "skmSFTP"
     moduleId "com.skm.sftp"
     moduleVersion "${project.version}"
     moduleDescription "adding SFTP functionaltity to ignition 8.1.*"
