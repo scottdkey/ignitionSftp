@@ -7,12 +7,12 @@ import java.io.IOException;
 
 public class GatewayScriptModule extends AbstractScriptModule {
   @Override
-  protected void uploadImpl(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
+  public void uploadImpl(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
     new SftpUtil().uploadSshj(remoteHost, username, password, localPath, remotePath);
   }
 
   @Override
-  protected void downloadImpl(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
+  public void downloadImpl(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
     new SftpUtil().downloadSshj(remoteHost, username, password, localPath, remotePath);
   }
 }

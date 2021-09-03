@@ -11,8 +11,8 @@ public class SftpUtil {
   public void uploadSshj(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
     SSHClient client = new SSHClient();
     client.addHostKeyVerifier(new PromiscuousVerifier());
-    client.connect(remoteHost);
     client.authPassword(username, password);
+    client.connect(remoteHost);
     SFTPClient sftpClient = client.newSFTPClient();
     sftpClient.put(localPath, remotePath);
     sftpClient.close();
@@ -22,8 +22,8 @@ public class SftpUtil {
   public void downloadSshj(String remoteHost, String username, String password, String localPath, String remotePath) throws IOException {
     SSHClient client = new SSHClient();
     client.addHostKeyVerifier(new PromiscuousVerifier());
-    client.connect(remoteHost);
     client.authPassword(username, password);
+    client.connect(remoteHost);
     SFTPClient sftpClient = client.newSFTPClient();
     sftpClient.get(localPath, remotePath);
     sftpClient.close();

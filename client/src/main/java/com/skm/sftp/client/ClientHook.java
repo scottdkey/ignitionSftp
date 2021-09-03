@@ -16,4 +16,5 @@ public class ClientHook extends AbstractClientModuleHook{
         new PropertiesFileDocProvider()
     );
   }
+
 }

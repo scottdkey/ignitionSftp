@@ -14,7 +14,6 @@ public abstract class AbstractScriptModule implements SFTPBlackBox {
         AbstractScriptModule.class.getName().replace('.', '/')
     );
   }
-
   @Override
   @ScriptFunction(docBundlePrefix = "AbstractScriptModule")
   public void upload(
