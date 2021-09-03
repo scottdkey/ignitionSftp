@@ -4,10 +4,11 @@ plugins {
 
 
 dependencies {
-    compile(project(":common"))
+    implementation(project(":common"))
     implementation("com.inductiveautomation.ignitionsdk:reporting-common:${sdk_version}")
-    compile("com.inductiveautomation.ignitionsdk:client-api:${sdk_version}")
-    compile("com.inductiveautomation.ignitionsdk:designer-api:${sdk_version}")
-    compile("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
-    compile("com.inductiveautomation.ignitionsdk:vision-client-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:client-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:designer-api:${sdk_version}")
+    implementation("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
+    implementation ("com.inductiveautomation.ignitionsdk:vision-client-api:${sdk_version}")
+    implementation 'com.jcraft:jsch:0.1.55'
 }

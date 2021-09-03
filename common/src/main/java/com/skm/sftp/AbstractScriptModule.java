@@ -3,6 +3,8 @@ package com.skm.sftp;
 import com.inductiveautomation.ignition.common.BundleUtil;
 import com.inductiveautomation.ignition.common.script.hints.ScriptArg;
 import com.inductiveautomation.ignition.common.script.hints.ScriptFunction;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 
 import java.io.IOException;
 
@@ -21,7 +23,7 @@ public abstract class AbstractScriptModule implements SFTPBlackBox {
       @ScriptArg ("username") String username,
       @ScriptArg ("password") String password,
       @ScriptArg ("localPath") String localPath,
-      @ScriptArg ("remotePath") String remotePath) throws IOException {
+      @ScriptArg ("remotePath") String remotePath) throws IOException, JSchException, SftpException {
     uploadImpl(remoteHost, username, password, localPath, remotePath);
   }
 
@@ -30,7 +32,7 @@ public abstract class AbstractScriptModule implements SFTPBlackBox {
       String username,
       String password,
       String localPath,
-      String remotePath) throws IOException;
+      String remotePath) throws IOException, JSchException, SftpException;
 
   @Override
   @ScriptFunction(docBundlePrefix = "AbstractScriptModule")
@@ -39,7 +41,7 @@ public abstract class AbstractScriptModule implements SFTPBlackBox {
       @ScriptArg ("username") String username,
       @ScriptArg ("password") String password,
       @ScriptArg ("localPath") String localPath,
-      @ScriptArg ("remotePath") String remotePath) throws IOException {
+      @ScriptArg ("remotePath") String remotePath) throws IOException, JSchException, SftpException {
     downloadImpl(remoteHost, username, password, localPath, remotePath);
   }
 
@@ -48,5 +50,5 @@ public abstract class AbstractScriptModule implements SFTPBlackBox {
       String username,
       String password,
       String localPath,
-      String remotePath) throws IOException;
+      String remotePath) throws IOException, JSchException, SftpException;
 }
