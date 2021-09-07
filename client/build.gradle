@@ -1,6 +1,10 @@
 plugins {
+    id "java"
     id "org.jetbrains.kotlin.jvm"
 }
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
 
 dependencies {
     implementation(project(":common"))
@@ -10,5 +14,4 @@ dependencies {
     implementation("com.inductiveautomation.ignitionsdk:vision-designer-api:${sdk_version}")
     implementation("com.inductiveautomation.ignitionsdk:vision-client-api:${sdk_version}")
     implementation ("org.jetbrains.kotlin:kotlin-script-runtime:1.5.30")
-    implementation("com.jcraft:jsch:0.1.55")
 }

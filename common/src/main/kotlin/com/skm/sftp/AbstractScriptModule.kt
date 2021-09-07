@@ -4,6 +4,8 @@ import com.inductiveautomation.ignition.common.BundleUtil
 import com.inductiveautomation.ignition.common.script.hints.ScriptArg
 import com.inductiveautomation.ignition.common.script.hints.ScriptFunction
 
+const val modulePath = "system.sftp"
+
 abstract class AbstractScriptModule : SFTPBlackBox {
     companion object {
         init {

@@ -7,8 +7,10 @@ import com.inductiveautomation.ignition.gateway.clientcomm.ClientReqSession
 import com.inductiveautomation.ignition.gateway.model.AbstractGatewayModuleHook
 import com.inductiveautomation.ignition.gateway.model.GatewayContext
 import com.skm.sftp.AbstractScriptModule
+import com.skm.sftp.modulePath
 import org.slf4j.LoggerFactory
 
+@Suppress("unused")
 class GatewayHook : AbstractGatewayModuleHook() {
     private val logger = LoggerFactory.getLogger(javaClass)
     private val scriptModule: AbstractScriptModule = GatewayScriptModule()
@@ -27,7 +29,7 @@ class GatewayHook : AbstractGatewayModuleHook() {
     override fun initializeScriptManager(manager: ScriptManager) {
         super.initializeScriptManager(manager)
         manager.addScriptModule(
-            "system.sftp",
+            modulePath,
             scriptModule,
             PropertiesFileDocProvider()
         )

@@ -15,7 +15,8 @@ buildscript {
 
   dependencies {
     classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
-
+    classpath("com.jcraft:jsch:0.1.55")
+    classpath('com.hierynomus:sshj:0.31.0')
   }
 }
 
