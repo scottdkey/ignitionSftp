@@ -13,18 +13,19 @@ buildscript {
 
   dependencies {
     classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
+
   }
 }
 
 plugins {
   id "base"
   id "maven-publish"
+  id "org.jetbrains.kotlin.jvm" version "1.5.30"
 }
 
 version = "1.0.0"
 group  = "com.skm"
 allprojects {
-  apply plugin: "application"
   apply plugin: "ignition-module-plugin"
 
   ignitionModule {
@@ -58,6 +59,8 @@ allprojects {
         [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
     ]
   }
+  sourceCompatibility = JavaVersion.VERSION_1_8
+  sourceCompatibility = JavaVersion.VERSION_1_8
 
 
   // where should we try to resolve maven artifacts from?
@@ -74,15 +77,16 @@ allprojects {
 }
 
 dependencies {
-  implementation("com.jcraft:jsch:0.1.55")
+  implementation ("com.jcraft:jsch:0.1.55")
+  implementation ('com.hierynomus:sshj:0.31.0')
 }
 
 task deepClean() {
   dependsOn allprojects.collect { "${it.path}:clean" }
   description "Executes clean tasks and remove node plugin caches."
 }
-/**
- * Gradle wrapper configuration*/
+
 wrapper {
-  distributionUrl="https://services.gradle.org/distributions/gradle-6.9.1-all.zip"
+  gradleVersion "6.9.1"
+  distributionType Wrapper.DistributionType.ALL
 }

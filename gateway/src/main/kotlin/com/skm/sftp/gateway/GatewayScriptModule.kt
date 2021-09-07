@@ -15,9 +15,6 @@ class GatewayScriptModule : AbstractScriptModule() {
         client.authPassword(username, password)
         return client
     }
-
-
-
     override fun uploadImpl(
         remoteHost: String,
         username: String,
