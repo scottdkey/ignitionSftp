@@ -1,5 +1,5 @@
 plugins {
-  id "java"
+  id "org.jetbrains.kotlin.jvm" version "1.5.30"
 }
 
 dependencies {
@@ -11,5 +11,5 @@ dependencies {
   compileOnly("com.inductiveautomation.ignitionsdk:perspective-common:${sdk_version}")
   compileOnly("com.inductiveautomation.ignitionsdk:perspective-designer:${sdk_version}")
   compileOnly("com.inductiveautomation.ignitionsdk:ignition-common:${sdk_version}")
-  implementation 'com.jcraft:jsch:0.1.55'
+  implementation("com.jcraft:jsch:0.1.55")
 }

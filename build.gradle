@@ -1,8 +1,10 @@
 buildscript {
   repositories{
     gradlePluginPortal()
-    mavenLocal()
     mavenCentral()
+    mavenLocal()
+    google()
+    maven { url 'https://maven.google.com' }
     maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
     maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
     maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
@@ -16,11 +18,13 @@ buildscript {
 
 plugins {
   id "base"
+  id "maven-publish"
 }
 
 version = "1.0.0"
 group  = "com.skm"
 allprojects {
+  apply plugin: "application"
   apply plugin: "ignition-module-plugin"
 
   ignitionModule {
@@ -54,31 +58,31 @@ allprojects {
         [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
     ]
   }
-  if(project.plugins.hasPlugin("java")){
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-  }
 
 
   // where should we try to resolve maven artifacts from?
   repositories {
-    mavenLocal()
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
+    gradlePluginPortal()
     mavenCentral()
+    mavenLocal()
+    google()
+    maven { url 'https://maven.google.com' }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
+    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
   }
+}
+
+dependencies {
+  implementation("com.jcraft:jsch:0.1.55")
 }
 
 task deepClean() {
   dependsOn allprojects.collect { "${it.path}:clean" }
   description "Executes clean tasks and remove node plugin caches."
-  doLast {
-    delete(file(".gradle"))
-  }
 }
 /**
  * Gradle wrapper configuration*/
 wrapper {
-  distributionUrl = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip"
+  distributionUrl="https://services.gradle.org/distributions/gradle-6.9.1-all.zip"
 }
