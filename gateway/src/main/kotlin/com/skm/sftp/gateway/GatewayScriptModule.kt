@@ -35,23 +35,17 @@ class GatewayScriptModule : AbstractScriptModule() {
             channelSftp = setupJsch(remoteHost, username, password)
         } catch (e: JSchException) {
             logger.info("jsch error", e)
-            println("setup error")
-            println(e)
         }
         try {
             channelSftp?.connect()
         } catch (e: JSchException) {
             logger.info("jsch unable to connect", e)
-            println("unable to connect")
-            println(e)
         }
         try {
             channelSftp?.put(localPath, remotePath)
             println("Upload Complete")
         } catch (e: SftpException) {
             logger.info("sftp upload failed", e)
-            println("upload Failed")
-            println(e)
         }
 
     }
@@ -68,23 +62,17 @@ class GatewayScriptModule : AbstractScriptModule() {
             channelSftp = setupJsch(remoteHost, username, password)
         } catch (e: JSchException){
             logger.info("jsch error", e)
-            println("setup error")
-            println(e)
         }
         try {
             channelSftp?.connect()
         } catch(e: JSchException){
             logger.info("jsch unable to connect", e)
-            println("connection error")
-            println(e)
         }
         try {
             channelSftp?.get(localPath, remotePath)
             println("Upload Complete")
         }catch (e: SftpException){
             logger.info("sftp upload failed", e)
-            println("upload failed")
-            println(e)
         }
     }
 }

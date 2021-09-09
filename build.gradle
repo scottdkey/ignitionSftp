@@ -1,25 +1,25 @@
 buildscript {
-  repositories{
-    gradlePluginPortal()
-    mavenCentral()
-    mavenLocal()
-    google()
-    maven { url 'https://maven.google.com' }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
-  }
+    repositories{
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        google()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
+    }
 
-  dependencies {
-    classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
-  }
+    dependencies {
+        classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
+    }
 }
 
 
 
 plugins {
-  id "base"
-  id "org.jetbrains.kotlin.jvm" version "1.5.30"
+    id "base"
+    id "org.jetbrains.kotlin.jvm" version "1.5.30"
 
 }
 
@@ -28,57 +28,55 @@ group  = "com.skm"
 
 
 allprojects {
-  apply plugin: "ignition-module-plugin"
+    apply plugin: "ignition-module-plugin"
 
-  ignitionModule {
-    fileName "skmSFTP"
-    moduleRoot "skmSFTP"
-    moduleName "skmSFTP"
-    moduleId "com.skm.sftp"
-    moduleVersion "${project.version}"
-    moduleDescription "adding SFTP functionaltity to ignition 8.1.*"
-    requiredFrameworkVersion "8"
-    requiredIgnitionVersion "8.1.0"
-    isFree true
-    license "license.html"
-    moduleDependencies = [
-        [scope: "C", moduleId: "com.inductiveautomation.perspective"],
-        [scope: "G", moduleId: "com.inductiveautomation.perspective"],
-        [scope: "G", moduleId: "com.jcraft:jsch:0.1.55"],
-        [scope: "G", moduleId: 'com.hierynomus:sshj:0.31.0'],
-        [scope: "D", moduleId: "com.inductiveautomation.perspective"]
-    ]
-    projectScopes = [
-        [name: "common", scope: "CGD"],
-        [name: "client", scope: "CD"],
-        [name: "gateway", scope: "G"],
-        [name: "designer", scope: "D"],
-    ]
-    hooks = [
-        [scope: "C", hookClass: "com.skm.sftp.client.ClientHook"],
-        [scope: "G", hookClass: "com.skm.sftp.gateway.GatewayHook"],
-        [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
-    ]
-  }
-  repositories {
-    gradlePluginPortal()
-    mavenCentral()
-    mavenLocal()
-    google()
-    maven { url 'https://maven.google.com' }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
-    maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
-  }
+    ignitionModule {
+        fileName "skmSFTP"
+        moduleRoot "skmSFTP"
+        moduleName "skmSFTP"
+        moduleId "com.skm.sftp"
+        moduleVersion "${project.version}"
+        moduleDescription "adding SFTP functionaltity to ignition 8.1.*"
+        requiredFrameworkVersion "8"
+        requiredIgnitionVersion "8.1.0"
+        isFree true
+        license "license.html"
+        moduleDependencies = [
+            [scope: "C", moduleId: "com.inductiveautomation.perspective"],
+            [scope: "G", moduleId: "com.inductiveautomation.perspective"],
+            [scope: "D", moduleId: "com.inductiveautomation.perspective"]
+        ]
+        projectScopes = [
+            [name: "common", scope: "CGD"],
+            [name: "client", scope: "CD"],
+            [name: "gateway", scope: "G"],
+            [name: "designer", scope: "D"],
+        ]
+        hooks = [
+            [scope: "C", hookClass: "com.skm.sftp.client.ClientHook"],
+            [scope: "G", hookClass: "com.skm.sftp.gateway.GatewayHook"],
+            [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
+        ]
+    }
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        google()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/" }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-releases/" }
+        maven { url "https://nexus.inductiveautomation.com/repository/inductiveautomation-snapshots/" }
+    }
 
 }
 
 task deepClean() {
-  dependsOn allprojects.collect { "${it.path}:clean" }
-  description "Executes clean tasks and remove node plugin caches."
+    dependsOn allprojects.collect { "${it.path}:clean" }
+    description "Executes clean tasks and remove node plugin caches."
 }
 
 wrapper {
-  gradleVersion "6.9.1"
-  distributionType Wrapper.DistributionType.ALL
+    gradleVersion "6.9.1"
+    distributionType Wrapper.DistributionType.ALL
 }
