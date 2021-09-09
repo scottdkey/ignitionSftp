@@ -1,0 +1,6 @@
+key.file=./path/to/keystore.jks
+key.pass=securePassword
+
+cert.file=./path/to/certificate.p7b
+cert.alias=aliasName
+cert.pass=certSecurePassword

@@ -3,3 +3,4 @@ build
 .gradle
 private
 *.props
+gradle.properties

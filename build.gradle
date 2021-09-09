@@ -12,9 +12,6 @@ buildscript {
 
   dependencies {
     classpath("com.inductiveautomation.gradle:ignition-module-plugin:1.2.10-SNAPSHOT")
-    classpath 'org.jetbrains.intellij:org.jetbrains.intellij.gradle.plugin:0.+'
-    classpath "com.jcraft:jsch:0.1.55"
-    classpath 'com.hierynomus:sshj:0.31.0'
   }
 }
 
@@ -23,10 +20,7 @@ buildscript {
 plugins {
   id "base"
   id "org.jetbrains.kotlin.jvm" version "1.5.30"
-}
 
-ext{
-  sdk_version = "8.1.0-SNAPSHOT"
 }
 
 version = "1.0.0"
@@ -66,10 +60,6 @@ allprojects {
         [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
     ]
   }
-
-
-
-  // where should we try to resolve maven artifacts from?
   repositories {
     gradlePluginPortal()
     mavenCentral()
@@ -82,9 +72,6 @@ allprojects {
   }
 
 }
-
-sourceCompatibility = JavaVersion.VERSION_11
-sourceCompatibility = JavaVersion.VERSION_11
 
 task deepClean() {
   dependsOn allprojects.collect { "${it.path}:clean" }
