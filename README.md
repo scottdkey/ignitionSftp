@@ -31,7 +31,7 @@ This will download a file called `fileName.txt` to the ignition server in the fo
 - setup a keystore.jks and certificate.p7b in someplace accessable by the project(Not covered in this readme). My preference is in a folder within the project called 'private' as that will not be included in git by default(.gitignore)
 - refactor `sign.props.example` to `sign.props` and fill out each of the fields with the correct information
 - run `./gradlew buildSignedModule` from commandline or use an IDE built in Gradle builds via GUI
-- The Build artifact will be available in the folder `{project root}/build/skmSFTP.modl`
+- The Build artifact will be available in the folder `{project root}/build/ignitionSFTP.modl`
 
 ## To Install in an ignition system:
 - navigate to Config > Modules
