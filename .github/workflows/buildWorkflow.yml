@@ -43,12 +43,9 @@ jobs:
       with:
         filePath: ${{ github.workspace }}/private/skmeng.jks
         encodedString: ${{ secrets.KEYSTORE }}
-    
-    - name: Setup wrapper
-      run: gradle wrapper
 
     - name: Build with Gradle
-      run: gradle buildSignedModule
+      run: gradlew buildSignedModule
       
     - name: Save artifact
       uses: actions/upload-artifact@v2
