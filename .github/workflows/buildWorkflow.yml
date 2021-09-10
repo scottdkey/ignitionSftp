@@ -45,7 +45,7 @@ jobs:
         encodedString: ${{ secrets.KEYSTORE }}
 
     - name: Build with Gradle
-      run: gradlew buildSignedModule
+      run: ./gradlew buildSignedModule
       
     - name: Save artifact
       uses: actions/upload-artifact@v2
