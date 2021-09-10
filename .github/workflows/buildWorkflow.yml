@@ -44,6 +44,8 @@ jobs:
         filePath: ${{ github.workspace }}/private/skmeng.jks
         encodedString: ${{ secrets.KEYSTORE }}
     
+    - name: Setup wrapper
+      run: gradle wrapper
 
     - name: Build with Gradle
       run: gradle buildSignedModule
