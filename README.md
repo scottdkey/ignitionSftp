@@ -5,7 +5,7 @@
 This is a basic module to add SFTP functionality and usage within ignition scripting with the signatures of:
 
 
-##Basic Usage
+## Basic Usage
 `system.sftp.download(remoteHost, username, password, localPath, remotePath)`
 
 or
