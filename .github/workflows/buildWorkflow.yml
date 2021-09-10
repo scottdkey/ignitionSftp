@@ -44,12 +44,6 @@ jobs:
         filePath: ${{ github.workspace }}/private/skmeng.jks
         encodedString: ${{ secrets.KEYSTORE }}
     
-    - name: Generate versions
-      uses: HardNorth/github-version-generate@v1.1.1
-      with:
-        version-source: file
-        version-file: gradle.properties
-        version-file-extraction-pattern: '(?<=version=).+'
 
     - name: Build with Gradle
       run: gradle buildSignedModule
@@ -57,5 +51,5 @@ jobs:
     - name: Save artifact
       uses: actions/upload-artifact@v2
       with:
-        name: skmSFTP-${{env.CURRENT_VERSION}}
+        name: skmSFTP-1.0.0
         path: build/skmSFTP.modl
