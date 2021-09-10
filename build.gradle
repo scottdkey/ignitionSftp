@@ -23,9 +23,6 @@ plugins {
 
 }
 
-version = "1.0.0"
-group  = "com.skm"
-
 
 allprojects {
     apply plugin: "ignition-module-plugin"
