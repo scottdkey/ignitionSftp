@@ -1,4 +1,4 @@
-rootProject.name = "skmSFTP"
+rootProject.name = "ignitionSFTP"
 include(
     ":",
     ":client",

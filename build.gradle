@@ -28,10 +28,10 @@ allprojects {
     apply plugin: "ignition-module-plugin"
 
     ignitionModule {
-        fileName "skmSFTP"
-        moduleRoot "skmSFTP"
-        moduleName "skmSFTP"
-        moduleId "com.skm.sftp"
+        fileName "ignitionSFTP"
+        moduleRoot "ignitionSFTP"
+        moduleName "ignitionSFTP"
+        moduleId "dev.scottkey.sftp"
         moduleVersion "${project.version}"
         moduleDescription "adding SFTP functionaltity to ignition 8.1.*"
         requiredFrameworkVersion "8"
@@ -50,9 +50,9 @@ allprojects {
             [name: "designer", scope: "D"],
         ]
         hooks = [
-            [scope: "C", hookClass: "com.skm.sftp.client.ClientHook"],
-            [scope: "G", hookClass: "com.skm.sftp.gateway.GatewayHook"],
-            [scope: "D", hookClass: "com.skm.sftp.designer.DesignerHook"]
+            [scope: "C", hookClass: "dev.scottkey.sftp.client.ClientHook"],
+            [scope: "G", hookClass: "dev.scottkey.gateway.GatewayHook"],
+            [scope: "D", hookClass: "dev.scottkey.designer.DesignerHook"]
         ]
     }
     repositories {

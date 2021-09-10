@@ -1,10 +1,11 @@
-package com.skm.sftp
+package dev.scottkey.sftp
 
 import com.inductiveautomation.ignition.common.BundleUtil
 import com.inductiveautomation.ignition.common.script.hints.ScriptArg
 import com.inductiveautomation.ignition.common.script.hints.ScriptFunction
 
 const val modulePath = "system.sftp"
+const val moduleId = "dev.scottkey.sftp"
 
 abstract class AbstractScriptModule : SFTPBlackBox {
     companion object {

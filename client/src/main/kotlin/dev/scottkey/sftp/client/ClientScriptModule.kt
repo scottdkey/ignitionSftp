@@ -1,13 +1,14 @@
-package com.skm.sftp.client
+package dev.scottkey.sftp.client
 
 import com.inductiveautomation.ignition.client.gateway_interface.ModuleRPCFactory
-import com.skm.sftp.AbstractScriptModule
-import com.skm.sftp.SFTPBlackBox
+import dev.scottkey.sftp.AbstractScriptModule
+import dev.scottkey.sftp.SFTPBlackBox
+import dev.scottkey.sftp.moduleId
 
 
 class ClientScriptModule: AbstractScriptModule() {
     private val rpc: SFTPBlackBox = ModuleRPCFactory.create(
-        "com.skm.sftp",
+        moduleId,
         SFTPBlackBox::class.java
     )
 

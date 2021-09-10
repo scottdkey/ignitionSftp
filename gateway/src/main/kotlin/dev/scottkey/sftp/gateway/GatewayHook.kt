@@ -1,4 +1,4 @@
-package com.skm.sftp.gateway
+package dev.scottkey.sftp.gateway
 
 import com.inductiveautomation.ignition.common.licensing.LicenseState
 import com.inductiveautomation.ignition.common.script.ScriptManager
@@ -6,8 +6,8 @@ import com.inductiveautomation.ignition.common.script.hints.PropertiesFileDocPro
 import com.inductiveautomation.ignition.gateway.clientcomm.ClientReqSession
 import com.inductiveautomation.ignition.gateway.model.AbstractGatewayModuleHook
 import com.inductiveautomation.ignition.gateway.model.GatewayContext
-import com.skm.sftp.AbstractScriptModule
-import com.skm.sftp.modulePath
+import dev.scottkey.sftp.AbstractScriptModule
+import dev.scottkey.sftp.modulePath
 import org.slf4j.LoggerFactory
 
 @Suppress("unused")

@@ -1,4 +1,4 @@
-package com.skm.sftp
+package dev.scottkey.sftp
 
 interface SFTPBlackBox {
     fun upload(
